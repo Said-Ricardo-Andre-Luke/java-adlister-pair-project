@@ -26,8 +26,10 @@ public class CreateAdServlet extends HttpServlet {
         User user = (User) request.getSession().getAttribute("user");
         Ad ad = new Ad(
             user.getId(),
+            request.getParameter("category"),
             request.getParameter("title"),
-            request.getParameter("description")
+            request.getParameter("description"),
+                request.getParameter("price")
         );
         DaoFactory.getAdsDao().insert(ad);
         response.sendRedirect("/ads");
