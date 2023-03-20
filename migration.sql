@@ -1,4 +1,4 @@
-USE adlister_db;
+USE adlister_pair_project;
 
 DROP TABLE IF EXISTS ads;
 DROP TABLE IF EXISTS users;
