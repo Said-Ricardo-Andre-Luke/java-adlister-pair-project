@@ -14,6 +14,7 @@ public class AdDetailsServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.getRequestDispatcher("WEB-INF/ads/adsdetails.jsp").forward(request, response);
     }
+
     //Later we can add the do post method for clicking on every individual ads to show their details
 //    @Override
 //    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
