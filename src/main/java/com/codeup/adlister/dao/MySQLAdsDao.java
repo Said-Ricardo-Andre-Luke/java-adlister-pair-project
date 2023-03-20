@@ -87,4 +87,8 @@ public class MySQLAdsDao implements Ads {
         }
     }
 
+    public static void main(String[] args) {
+        System.out.println(DaoFactory.getAdsDao().findById(1));
+    }
+
 }
