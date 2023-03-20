@@ -14,8 +14,11 @@ CREATE TABLE users (
 CREATE TABLE ads (
     id INT UNSIGNED NOT NULL AUTO_INCREMENT,
     user_id INT UNSIGNED NOT NULL,
+    category varchar(40),
     title VARCHAR(240) NOT NULL,
     description TEXT NOT NULL,
+    price FLOAT UNSIGNED,
+    date_created datetime,
     PRIMARY KEY (id),
     FOREIGN KEY (user_id) REFERENCES users(id)
         ON DELETE CASCADE
