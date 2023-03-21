@@ -1,5 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <html>
 <head>
     <jsp:include page="/WEB-INF/partials/head.jsp">
@@ -34,6 +35,15 @@
                     <button type="submit" class="btn btn-primary">Details</button>
                 </c:if>
             </form>
+
+            <form method="get" action="/ad/edit">
+
+                <input type="hidden" name="id" value="${ad.id}">
+                <c:if test="${sessionScope.user != null and ad.userId == sessionScope.user.id}">
+                    <button type="submit" class="btn btn-alert">Edit</button>
+                </c:if>
+            </form>
+
         </div>
     </c:forEach>
 </div>

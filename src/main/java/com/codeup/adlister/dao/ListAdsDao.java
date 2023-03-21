@@ -37,6 +37,11 @@ public class ListAdsDao implements Ads {
 
     }
 
+    @Override
+    public void editAd(long id, String updatedCategory, String updatedTitle, double price, String updatedDescription) {
+
+    }
+
     private List<Ad> generateAds() {
         List<Ad> ads = new ArrayList<>();
         ads.add(new Ad(
