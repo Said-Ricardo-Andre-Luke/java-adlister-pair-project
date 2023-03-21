@@ -65,8 +65,8 @@ public class MySQLAdsDao implements Ads {
                 rs.getString("category"),
                 rs.getString("title"),
                 rs.getString("description"),
-                rs.getDouble("price")
-//                rs.getString("date_created")
+                rs.getDouble("price"),
+                rs.getString("date_created")
         );
     }
 
@@ -77,7 +77,6 @@ public class MySQLAdsDao implements Ads {
         }
         return ads;
     }
-
 
     public Ad findById(long id) {
         try {
