@@ -19,6 +19,7 @@
             <p>Description: ${ad.description}</p>
             <p>Price: ${ad.price}</p>
             <p>Date-created: ${ad.date_created}</p>
+            <img src="${ad.photo}" alt="photo" width="300" height="350">
 
             <form method="post" action="/ads/delete">
                 <input type="hidden" name="id" value="${ad.id}">
@@ -28,7 +29,6 @@
             </form>
 
             <form method="get" action="/adDetail">
-
                 <input type="hidden" name="id" value="${ad.id}">
                 <c:if test="${sessionScope.user != null}">
                     <button type="submit" class="btn btn-primary">Details</button>

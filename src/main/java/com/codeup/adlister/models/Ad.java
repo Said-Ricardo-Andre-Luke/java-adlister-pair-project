@@ -10,6 +10,20 @@ public class Ad {
     private Double price;
     private String date_created;
 
+    private String photo;
+
+    public Ad(long id, long userId, String category, String title, String description, Double price, String date_created, String photo) {
+        this.id = id;
+        this.userId = userId;
+        this.category = category;
+        this.title = title;
+        this.description = description;
+        this.price = price;
+        this.date_created = date_created;
+        this.photo = photo;
+    }
+
+
     public Ad(long id, long userId, String category, String title, String description, Double price, String date_created) {
         this.id = id;
         this.userId = userId;
@@ -20,13 +34,14 @@ public class Ad {
         this.date_created = date_created;
     }
 
-    public Ad(long userId, String category, String title, String description, Double price, String date_created) {
+    public Ad(long userId, String category, String title, String description, Double price, String date_created, String photo) {
         this.userId = userId;
         this.category = category;
         this.title = title;
         this.description = description;
         this.price = price;
         this.date_created = date_created;
+        this.photo = photo;
     }
 
     public Ad(long id, long userId, String category, String title, String description, double price) {
@@ -54,6 +69,15 @@ public class Ad {
         this.userId = userId;
         this.title = title;
         this.description = description;
+    }
+
+    public Ad(long userId, String category, String title, String description, Double price, String photo) {
+        this.userId = userId;
+        this.category = category;
+        this.title = title;
+        this.description = description;
+        this.price = price;
+        this.photo = photo;
     }
 
     public long getId() {
@@ -111,4 +135,13 @@ public class Ad {
     public void setDate_created(String date_created) {
         this.date_created = date_created;
     }
+
+    public String getPhoto() {
+        return photo;
+    }
+
+    public void setPhoto(String photo) {
+        this.photo = photo;
+    }
+
 }
