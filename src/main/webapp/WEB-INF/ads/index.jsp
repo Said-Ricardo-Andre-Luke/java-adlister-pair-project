@@ -26,7 +26,9 @@
                     <button type="submit" class="btn btn-danger">Delete</button>
                 </c:if>
             </form>
+
             <form method="get" action="/adDetail">
+
                 <input type="hidden" name="id" value="${ad.id}">
                 <c:if test="${sessionScope.user != null}">
                     <button type="submit" class="btn btn-primary">Details</button>
