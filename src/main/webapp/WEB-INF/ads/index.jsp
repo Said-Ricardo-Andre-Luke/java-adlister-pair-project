@@ -14,8 +14,12 @@
 
     <c:forEach var="ad" items="${ads}">
         <div class="col-md-6">
-            <h2 href="http://localhost:8080/details">${ad.title}</h2>
-            <p>${ad.description}</p>
+            <h2>Category: ${ad.category}</h2>
+            <h3 href="http://localhost:8080/details"> Title: ${ad.title}</h3>
+            <p>Description: ${ad.description}</p>
+            <p>Price: ${ad.price}</p>
+            <p>Date-created: ${ad.date_created}</p>
+
         </div>
     </c:forEach>
 </div>
