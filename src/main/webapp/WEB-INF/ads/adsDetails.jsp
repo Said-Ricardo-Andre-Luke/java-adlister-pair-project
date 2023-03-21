@@ -21,9 +21,13 @@
 
 <%--Required to be checked, how to get the details of a single Ad--%>
 
-    <div class="col-md-6">
-
-    </div>
+<div class="col-md-6">
+    <h2>Category: ${ad.category}</h2>
+    <h3 href="http://localhost:8080/details"> Title: ${ad.title}</h3>
+    <p>Description: ${ad.description}</p>
+    <p>Price: ${ad.price}</p>
+    <p>Date-created: ${ad.date_created}</p>
+</div>
 
 </body>
 </html>
