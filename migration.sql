@@ -23,6 +23,7 @@ CREATE TABLE ads
     title        VARCHAR(240) NOT NULL,
     description  TEXT         NOT NULL,
     price        FLOAT UNSIGNED,
+
     date_created DATETIME default CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     PRIMARY KEY (id),
     FOREIGN KEY (user_id) REFERENCES users (id)
