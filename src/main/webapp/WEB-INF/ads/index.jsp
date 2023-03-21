@@ -27,7 +27,7 @@
                 </c:if>
             </form>
             <form method="post" action="/adDetail">
-                <input name="id" value="${ad.id}">
+                <input type="hidden" name="id" value="${ad.id}">
                 <c:if test="${sessionScope.user != null}">
                     <button type="submit" class="btn btn-primary">Details</button>
                 </c:if>
