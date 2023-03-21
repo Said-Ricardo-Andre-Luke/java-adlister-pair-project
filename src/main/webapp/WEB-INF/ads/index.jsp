@@ -20,6 +20,12 @@
             <p>Price: ${ad.price}</p>
             <p>Date-created: ${ad.date_created}</p>
 
+            <form method="post" action="/ads/delete">
+                <input type="hidden" name="id" value="${ad.id}">
+                <c:if test="${sessionScope.user != null and ad.userId == sessionScope.user.id}">
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                </c:if>
+            </form>
         </div>
     </c:forEach>
 </div>
