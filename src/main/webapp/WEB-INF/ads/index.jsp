@@ -29,29 +29,11 @@
                     <img src="https://images.pexels.com/photos/7031674/pexels-photo-7031674.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="photo" width="300" height="350">
                 </c:otherwise>
             </c:choose>
+            <jsp:include page="/WEB-INF/partials/buttons.jsp">
+                <jsp:param name="id" value="${user.id}"/>
+                <jsp:param name="userId" value="${ad.userId}"/>
+            </jsp:include>
 
-
-            <form method="post" action="/ads/delete">
-                <input type="hidden" name="id" value="${ad.id}">
-                <c:if test="${sessionScope.user != null and ad.userId == sessionScope.user.id}">
-                    <button type="submit" class="btn btn-danger">Delete</button>
-                </c:if>
-            </form>
-
-            <form method="get" action="/adDetail">
-                <input type="hidden" name="id" value="${ad.id}">
-                <c:if test="${sessionScope.user != null}">
-                    <button type="submit" class="btn btn-primary">Details</button>
-                </c:if>
-            </form>
-
-            <form method="get" action="/ad/edit">
-
-                <input type="hidden" name="id" value="${ad.id}">
-                <c:if test="${sessionScope.user != null and ad.userId == sessionScope.user.id}">
-                    <button type="submit" class="btn btn-alert">Edit</button>
-                </c:if>
-            </form>
 
         </div>
     </c:forEach>

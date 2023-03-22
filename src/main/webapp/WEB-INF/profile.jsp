@@ -30,7 +30,10 @@
                      alt="photo" width="300" height="350">
             </c:otherwise>
         </c:choose>
-
+        <jsp:include page="/WEB-INF/partials/buttons.jsp">
+            <jsp:param name="id" value="${id}"/>
+            <jsp:param name="userId" value="${ad.userId}"/>
+        </jsp:include>
     </div>
     </c:if>
     </c:forEach>
