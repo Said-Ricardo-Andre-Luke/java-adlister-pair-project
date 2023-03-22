@@ -16,10 +16,11 @@ public class ViewProfileServlet extends HttpServlet {
         if (request.getSession().getAttribute("user") == null) {
             response.sendRedirect("/login");
             return;
+        }else{
+            request.setAttribute("ads", DaoFactory.getAdsDao().all());
+            request.getRequestDispatcher("/WEB-INF/profile.jsp").forward(request, response);
         }
 
-        request.setAttribute("ad", DaoFactory.getAdsDao().all());
 
-        request.getRequestDispatcher("/WEB-INF/profile.jsp").forward(request, response);
     }
 }
