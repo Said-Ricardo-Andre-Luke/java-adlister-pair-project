@@ -1,13 +1,13 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
+<nav class="navbar navbar-default sticky-top">
+    <div class="container-fluid display-flex justify-content-between">
         <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <a class="navbar-brand" href="/ads">Adlister</a>
+        <div class="navbar-header display-flex justify-content-start">
+            <a class="navbar-brand mt-5 " href="/ads">Adlister</a>
         </div>
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav navbar-right display-flex flex-row ">
             <c:choose>
                 <c:when test="${not empty sessionScope.user}">
                     <li><a href="/profile">Profile</a></li>
