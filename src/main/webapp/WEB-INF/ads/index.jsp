@@ -12,11 +12,12 @@
 
 <div class="container">
     <h1>Here Are all the ads!</h1>
-
     <c:forEach var="ad" items="${ads}">
         <div class="col-md-6">
             <h2>Category: ${ad.category}</h2>
-            <h3 href="http://localhost:8080/details"> Title: ${ad.title}</h3>
+            <a href="http://localhost:8080/adDetail?id=${ad.id}">
+                <h3>Title: ${ad.title}</h3>
+            </a>
             <p>Description: ${ad.description}</p>
             <p>Price: ${ad.price}</p>
             <p>Date-created: ${ad.date_created}</p>
