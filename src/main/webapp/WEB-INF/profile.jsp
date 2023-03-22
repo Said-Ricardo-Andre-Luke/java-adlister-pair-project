@@ -27,10 +27,10 @@
                             <p class="card-text">Date-created: ${ad.date_created}</p>
                             <c:choose>
                                 <c:when test="${ad.photo != ''}">
-                                    <img class="card-img-top m-1" src="${ad.photo}" alt="photo">
+                                    <img class="card-img-top m-1 rounded" src="${ad.photo}" alt="photo">
                                 </c:when>
                                 <c:otherwise>
-                                    <img class="card-img-top m-1" src="https://images.pexels.com/photos/7031674/pexels-photo-7031674.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    <img class="card-img-top m-1 rounded" src="https://images.pexels.com/photos/7031674/pexels-photo-7031674.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                          alt="photo">
                                 </c:otherwise>
                             </c:choose>
