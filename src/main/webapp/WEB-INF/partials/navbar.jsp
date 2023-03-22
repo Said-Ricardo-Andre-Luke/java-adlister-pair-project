@@ -1,5 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<nav class="navbar navbar-expand navbar-light bg-light sticky-top">
+<nav class="navbar navbar-expand navbar-light bg-light sticky-top shadow">
     <div class="container-fluid">
         <a class="navbar-brand d-flex align-items-center" href="/ads"><img src="../picture/Ads.png" alt="icon" width="35" height="35">Adlister</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
