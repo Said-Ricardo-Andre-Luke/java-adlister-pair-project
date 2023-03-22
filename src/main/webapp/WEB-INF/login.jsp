@@ -12,12 +12,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
+            box-sizing: border-box;
+            margin: 0;
             background-color: #f2f2f2;
         }
         .card {
             width: 400px;
             margin: auto;
-            margin-top: 100px;
+            margin-top: 75px;
             padding: 20px;
             background-color: #ffffff;
             border-radius: 5px;
