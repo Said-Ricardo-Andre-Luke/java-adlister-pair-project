@@ -22,8 +22,8 @@
                             <a href="http://localhost:8080/adDetail?id=${ad.id}">
                                 <h3 class="card-subtitle mb-2">${ad.title}</h3>
                             </a>
-                            <p class="card-text">${ad.description}</p>
-                            <p class="card-text">Price: ${ad.price}</p>
+                            <p class="card-text" style="font-size: 18px;">${ad.description}</p>
+                            <p class="card-text" style="font-size: 18px;">Price: ${ad.price}</p>
                             <p class="card-text">Date-created: ${ad.date_created}</p>
                             <c:choose>
                                 <c:when test="${ad.photo != ''}">
