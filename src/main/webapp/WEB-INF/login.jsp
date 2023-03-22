@@ -4,7 +4,6 @@
     <jsp:include page="/WEB-INF/partials/head.jsp">
         <jsp:param name="title" value="Please Log In" />
     </jsp:include>
-    <link rel="stylesheet" href="../mystyle.css">
 </head>
 <jsp:include page="/WEB-INF/partials/navbar.jsp" />
 <body>
@@ -22,21 +21,5 @@
         <input type="submit" class="btn btn-primary btn-block" value="Log In">
     </form>
 </div>
-<div id="hey"><div id="layer-up"></div></div>
-<div id="layer-0">
-
-    <div id="layer-1">
-
-        <div id="layer-2">
-            <div id="lines">
-
-                <div id="layer-corner">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div id="mtnZZZ"></div>
 </body>
 </html>
