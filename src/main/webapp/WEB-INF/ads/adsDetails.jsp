@@ -22,11 +22,22 @@
 <%--Required to be checked, how to get the details of a single Ad--%>
 
 <div class="col-md-6">
+    <form method="get" action="/ads">
+    <button type="submit">X</button>
+    </form>
     <h2>Category: ${ad.category}</h2>
     <h3 href="http://localhost:8080/details"> Title: ${ad.title}</h3>
     <p>Description: ${ad.description}</p>
     <p>Price: ${ad.price}</p>
     <p>Date-created: ${ad.date_created}</p>
+    <c:choose>
+        <c:when test="${ad.photo != ''}">
+            <img src="${ad.photo}" alt="photo" width="300" height="350">
+        </c:when>
+        <c:otherwise>
+            <img src="https://images.pexels.com/photos/7031674/pexels-photo-7031674.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="photo" width="300" height="350">
+        </c:otherwise>
+    </c:choose>
 </div>
 
 </body>

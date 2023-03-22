@@ -20,6 +20,15 @@
             <p>Description: ${ad.description}</p>
             <p>Price: ${ad.price}</p>
             <p>Date-created: ${ad.date_created}</p>
+            <c:choose>
+                <c:when test="${ad.photo != ''}">
+                    <img src="${ad.photo}" alt="photo" width="300" height="350">
+                </c:when>
+                <c:otherwise>
+                    <img src="https://images.pexels.com/photos/7031674/pexels-photo-7031674.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="photo" width="300" height="350">
+                </c:otherwise>
+            </c:choose>
+
 
             <form method="post" action="/ads/delete">
                 <input type="hidden" name="id" value="${ad.id}">
@@ -29,7 +38,6 @@
             </form>
 
             <form method="get" action="/adDetail">
-
                 <input type="hidden" name="id" value="${ad.id}">
                 <c:if test="${sessionScope.user != null}">
                     <button type="submit" class="btn btn-primary">Details</button>

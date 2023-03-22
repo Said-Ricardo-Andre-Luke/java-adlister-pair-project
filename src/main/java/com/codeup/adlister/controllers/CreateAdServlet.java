@@ -27,15 +27,17 @@ public class CreateAdServlet extends HttpServlet {
 
         Double price = Double.parseDouble(request.getParameter("price"));
 
+
         Ad ad = new Ad(
                 user.getId(),
                 request.getParameter("category"),
                 request.getParameter("title"),
                 request.getParameter("description"),
-                price
+                price,
+                request.getParameter("photo")
         );
         DaoFactory.getAdsDao().insert(ad);
         response.sendRedirect("/ads");
-        System.out.println(request.getParameter("category"));
+        System.out.println(request.getParameter("photo"));
     }
 }
