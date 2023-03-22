@@ -30,7 +30,7 @@
                 </c:otherwise>
             </c:choose>
             <jsp:include page="/WEB-INF/partials/buttons.jsp">
-                <jsp:param name="id" value="${user.id}"/>
+                <jsp:param name="id" value="${ad.id}"/>
                 <jsp:param name="userId" value="${ad.userId}"/>
             </jsp:include>
 
