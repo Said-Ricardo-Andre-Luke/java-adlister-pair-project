@@ -15,7 +15,7 @@
         .card {
             width: 400px;
             margin: auto;
-            margin-top: 100px;
+            margin-top: 75px;
             padding: 20px;
             background-color: #ffffff;
             border-radius: 5px;
@@ -27,7 +27,7 @@
 <body>
     <jsp:include page="partials/navbar.jsp" />
     <div class="card">
-        <h2>Login</h2>
+        <h2 class="text-center">Please, register! </h2>
         <form action="/register" method="post">
             <div class="form-group">
                 <label for="username">Username:</label>
@@ -45,7 +45,7 @@
                 <label for="confirm_password">Confirm Password:</label>
                 <input type="password" class="form-control" id="confirm_password" name="confirm_password" required>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary btn-block">Submit</button>
         </form>
     </div>
     <!-- Bootstrap JS -->
