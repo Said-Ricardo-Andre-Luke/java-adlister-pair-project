@@ -9,9 +9,7 @@
 </head>
 <body>
 <jsp:include page="/WEB-INF/partials/navbar.jsp"/>
-
 <div class="container">
-
     <h1 class="mt-5">Welcome, ${sessionScope.user.username}!</h1>
         <div class="container d-flex justify-content-center">
             <c:forEach var="ad" items="${ads}">
@@ -43,8 +41,6 @@
                 </c:if>
             </c:forEach>
         </div>
-
 </div>
-
 </body>
 </html>
