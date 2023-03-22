@@ -13,4 +13,6 @@ public interface Ads {
     Ad findById(long id);
 
     void deleteAd(Ad ad);
+
+    void editAd(long id, String updatedCategory, String updatedTitle, double price, String updatedDescription);
 }

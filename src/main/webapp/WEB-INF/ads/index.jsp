@@ -1,5 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <html>
 <head>
     <jsp:include page="/WEB-INF/partials/head.jsp">
@@ -19,7 +20,15 @@
             <p>Description: ${ad.description}</p>
             <p>Price: ${ad.price}</p>
             <p>Date-created: ${ad.date_created}</p>
-            <img src="${ad.photo}" alt="photo" width="300" height="350">
+            <c:choose>
+                <c:when test="${ad.photo != ''}">
+                    <img src="${ad.photo}" alt="photo" width="300" height="350">
+                </c:when>
+                <c:otherwise>
+                    <img src="https://images.pexels.com/photos/7031674/pexels-photo-7031674.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="photo" width="300" height="350">
+                </c:otherwise>
+            </c:choose>
+
 
             <form method="post" action="/ads/delete">
                 <input type="hidden" name="id" value="${ad.id}">
@@ -34,6 +43,15 @@
                     <button type="submit" class="btn btn-primary">Details</button>
                 </c:if>
             </form>
+
+            <form method="get" action="/ad/edit">
+
+                <input type="hidden" name="id" value="${ad.id}">
+                <c:if test="${sessionScope.user != null and ad.userId == sessionScope.user.id}">
+                    <button type="submit" class="btn btn-alert">Edit</button>
+                </c:if>
+            </form>
+
         </div>
     </c:forEach>
 </div>
