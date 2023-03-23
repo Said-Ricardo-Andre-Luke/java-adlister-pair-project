@@ -21,14 +21,14 @@ INSERT INTO  users (username, email, password) VALUES ('Said', 'said@email.com',
 INSERT INTO  users (username, email, password) VALUES ('Ricardo', 'ricardo@email.com', '$2a$12$2QzLzsFihYYRKBQNac/LCeQJaUP/LBAduqVkMtnqrOQ.1Yydp0Jim');
 INSERT INTO  users (username, email, password) VALUES ('ttwelvetrees0', 'lmandell0@studiopress.com', '');#password is trees for this user
 
-INSERT INTO ads (user_id, category, title, description, price, date_created) VALUES (3, 'electronics', 'MacBook Pro', 'Lightly used comes with charger', 800, '2023-03-01');
-INSERT INTO ads (user_id, category, title, description, price, date_created) VALUES (6, 'electronics', 'Ipad', 'Comes with case and screen protector', 300, '2023-03-14');
-INSERT INTO ads (user_id, category, title, description, price, date_created) VALUES (3, 'electronics', 'Iphone 6', 'Comes with case and screen protector', 200, '2023-03-08');
-INSERT INTO ads (user_id, category, title, description, price, date_created) VALUES (2, 'electronics', 'Monitor', 'never really used has been sitting for 3 months works', 150, '2023-03-08');
-INSERT INTO ads (user_id, category, title, description, price, date_created) VALUES (6, 'services', 'Website Building', 'Need a website built email me for more information', 500, '2023-03-11');
-INSERT INTO ads (user_id, category, title, description, price, date_created) VALUES (7, 'services', 'De-bugging', 'will de-bug code when you are stuck', 100, '2023-03-11');
-INSERT INTO ads (user_id, category, title, description, price, date_created) VALUES (7, 'services', 'Code cleaning', 'will review code and make suggestions on how to clean it up and improve it', 150, '2023-03-10');
-INSERT INTO ads (user_id, category, title, description, price, date_created) VALUES (4, 'services', 'Tutoring', 'Need help writing code and understanding it I offer tutoring for those that need it', 60, '2023-03-11');
+INSERT INTO ads (user_id, category, title, description, price, photo) VALUES (3, 'electronics', 'MacBook Pro', 'Lightly used comes with charger', 800,  'https://images.pexels.com/photos/102061/pexels-photo-102061.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+INSERT INTO ads (user_id, category, title, description, price, photo) VALUES (6, 'electronics', 'Ipad', 'Comes with case and screen protector', 300, 'https://images.pexels.com/photos/768473/pexels-photo-768473.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+INSERT INTO ads (user_id, category, title, description, price, photo) VALUES (3, 'electronics', 'Iphone 6', 'Comes with case and screen protector', 200, 'https://images.pexels.com/photos/635535/pexels-photo-635535.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+INSERT INTO ads (user_id, category, title, description, price, photo) VALUES (2, 'electronics', 'Monitor', 'never really used has been sitting for 3 months works', 150, 'https://images.pexels.com/photos/967065/pexels-photo-967065.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+INSERT INTO ads (user_id, category, title, description, price, photo) VALUES (6, 'services', 'Website Building', 'Need a website built email me for more information', 500,'https://images.pexels.com/photos/6476595/pexels-photo-6476595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+INSERT INTO ads (user_id, category, title, description, price, photo) VALUES (7, 'services', 'De-bugging', 'will de-bug code when you are stuck', 100, 'https://images.pexels.com/photos/2338148/pexels-photo-2338148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+INSERT INTO ads (user_id, category, title, description, price, photo) VALUES (7, 'services', 'Code cleaning', 'will review code and make suggestions on how to clean it up and improve it', 150, 'https://images.pexels.com/photos/14016664/pexels-photo-14016664.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+INSERT INTO ads (user_id, category, title, description, price, photo) VALUES (4, 'services', 'Tutoring', 'Need help writing code and understanding it I offer tutoring for those that need it', 60, 'https://images.pexels.com/photos/6929194/pexels-photo-6929194.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
 
 
 
